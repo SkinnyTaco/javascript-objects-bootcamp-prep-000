@@ -1,8 +1,8 @@
 var playlist = { 'Will Smith' : 'Big Willie Style', 'The Killers' : 'Mr. Brightside' };
 
 function updatePlaylist(obj, artistName, song) {
-  var newPlaylist = Object.assign({}, obj, {[artistName] : song});
-  return newPlaylist;
+  obj[artistName] = song;
+  return obj;
 }
 
 function removeFromPlaylist(obj, artistName) {
