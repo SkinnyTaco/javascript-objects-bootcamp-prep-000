@@ -6,7 +6,7 @@ function updatePlaylist(obj, artistName, song) {
 }
 
 function removeFromPlaylist(obj, artistName) {
-  delete newPlaylist[artistName];
+  delete obj[artistName];
   return newPlaylist;
 }
 
